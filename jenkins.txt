@@ -34,4 +34,32 @@
       *Job of slave is to do as they are configured in jenkin server which include build job dispatched by master.
       *We can configure project always run on a particular slave machine, or a particular type of slave machine or simply let pick the next available slave.
       *Jenkins developed using  JAVA & JAVA is platform independent thus jenkins servers and node/slave can be configured in any servers including windows, Linux & Mac.
-         
+
+3.Master Slave concepts?
+ *Used to manage distributed builds
+ *Master and slave communicate through TCP/IP protocol.
+ *In master slave architecture of jenkins, master represents installation of jenkins and it handles all tasks for build system.
+
+4.What is Maven,ant and gradle?
+ MAVEN:
+      *It is a build automation tool used primarly for java projects. It address two aspects of building software.
+          i)Describes how software is built.
+          ii)Describes its dependencies.
+      *Unlike eariler tools like apache ant it uses conventions for build procedure and only exceptions need to be write down.
+      *An XML file describe the software project being built and its dependencies on the other exeternal module and components,
+      the build order, directories and required plug-ins. It comes with predefined target for performing certain well defined such as compilation of code and its packaging.
+      *Maven dunamically downloads java libraries and maven plugin from one or more repositories such as the Maven 2 central repositories and stores them in a central cache.
+       This local cache of downloaded "artifacts" can also be updated with "artifact"created by local projects.
+       repositories can also be updtaed
+      *Maven can also be used build and manage projects written in c#, ruby, scala and othe languages.
+      *Maven project is hosted by Apache software foundation. Where it was formerly part of "Jakarta Project".
+      *Maven is built using a plugin-based architecture that allows it to make use of any application controllable through standard IP
+       theoritically it allows anyone to write plugin to interface with build tools for anyother language in reality support and use of language other than Java is minimal.
+       pluhgin for .net framework exists and maintained C and C++ maintained in maven 2.
+ ANT:
+      *Apache Ant is java based build tool. "ANT" stands for "Another Neat Tool" Main purpose of ANT is to build java based app.
+       we can run many built in task like compile,assemble and test..you can install "ant" manually and integrate it with jenkins or you can downlaod and install through jenkins.
+GRADLE:
+      *This plug in is add "gradle" support to jenkins. gradle is managed tool inside jenkins (ant & maven) including support for automatic installation and a new build
+       step is provided to execute "gradle" tasks.
+        
