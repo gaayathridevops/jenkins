@@ -1,0 +1,4 @@
+1.What is Jenkins?
+*Jenkin is an open source automation server written in Java.
+*It helps to automate the non human part of software development process with CI facilitating technical aspects of continuous delivery
+*It is a server based system that runs in servlet containers such as apache tomcat.
