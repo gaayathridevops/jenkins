@@ -2,3 +2,36 @@
 *Jenkin is an open source automation server written in Java.
 *It helps to automate the non human part of software development process with CI facilitating technical aspects of continuous delivery
 *It is a server based system that runs in servlet containers such as apache tomcat.
+
+2.Jenkin Architecture?
+*It is continuous integration tool.
+*It helps to integrate other tool to automate the software developmant activity and repetitive task.
+*It has 2 release
+    i)Community version - open source free.
+   ii)jenkin enterprise - from cloud bees.
+*Extremly powerful with vast amount of plug-in supported.
+ Most active open source projects so learning and finding the information is easily available in the internet.
+*It uses master /slave architecture to manage distributed builds.
+*Jenkin based on 2 components.
+   i)Jenkin Server.
+  ii)Jenkin node/slave/build server.
+
+   JENKIN SERVER:
+      *It is a web dashboard which is nothing but powered from a 'warfile', default run on 8080 port.
+      *Using Dashboard we can configure jobs/projects.
+      *Build take palce in nodes/slave.
+      *Default one node/slave is configured and running in Jenkin server.
+      *You can add more node/slave as well using IP address, user name password using ssh/jnlp/webstart methods.
+   
+   Main jenkin server is the master
+      *Inshort the master job is to handle scheduling build jobs    
+      *Dispatching builds to the slave for actual execution
+      *Monitor the slaves (possible taking them online and offline as required)
+      *Recording and presenting the build results.
+      *Even in distributed architecture a master instance of jenkins can also execute build job directly.
+   
+   JENKIN SLAVE:
+      *Job of slave is to do as they are configured in jenkin server which include build job dispatched by master.
+      *We can configure project always run on a particular slave machine, or a particular type of slave machine or simply let pick the next available slave.
+      *Jenkins developed using  JAVA & JAVA is platform independent thus jenkins servers and node/slave can be configured in any servers including windows, Linux & Mac.
+         
